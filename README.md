@@ -7,7 +7,7 @@ A keyboard to earn, swap and spend tokens while typing 💁.
   <a href="#keyboard-what-is-keymeta">About</a> •
   <a href="#nerd_face-typing">Typing</a> •
   <a href="#surfer-roadmap">Roadmap</a> •
-  <a href="#technologist-technologies">Technologies</a>
+  <a href="#artificial_satellite-technology">Technology</a>
   <br>
 </p>
 
@@ -32,6 +32,20 @@ We have defined three main pillars to monitor going forward:
 2. **Engagement&Distribution**: Reach the maximum usage possible.
 3. **Behavioral Change**: Tap-to-earn is designed to boost your text output while rewarding positive thinking.
 
+# Features
+
+**Tap-to-Earn**
+
+The concept of the tap-to-earn is an innovate way to incentive the user to use Web3 technologies while we increase the usage, reward positive thinking and generate revene.
+
+
+**Swap**
+
+same.
+
+**Secure pasteboard**
+
+ahs
 
 # :surfer: Roadmap
 
@@ -47,20 +61,28 @@ We have defined three main pillars to monitor going forward:
 
 * Launch Swap Beta feature on iOS.
 * Development of a task platform featuring a Web3-powered advertising system designed to enchance user engagement and offer richer rewards.
+* 
 
 ### Q2 2025
 
 * Android Keymeta version in Beta launch.
-*  
+* 
 
 
 ## Milestones
 
+To finalise. 
 
 
-# :technologist: Technologies
+# :artificial_satellite: Technology
 
-List all the different technologies involed on the Keymeta from Stonfi.
+**Stonfi Technology**
+
+TODO - List all the different technologies involed on the Keymeta from Stonfi.
+
+**Know Your Customer**
+
+In order to validate that the user is a real user, to prevent fraud on the tap-to-earn system, we will be using a system in development to know if the keyboard is used by a machine or by a human. More info here: [Know your customer](https://www.fleksy.com/blog/fleksy-granted-innovate-uk-funding-to-combat-financial-fraud-on-mobile/).
 
 
 
