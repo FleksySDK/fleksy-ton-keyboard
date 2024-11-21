@@ -18,20 +18,8 @@ extension Font {
         Font.custom(customFontFamily, size: 30, relativeTo: .largeTitle)
     }
     
-    public static var customTitle: Font {
-        Font.custom(customFontFamily, size: 24, relativeTo: .title)
-    }
-    
-    public static var customTitle2: Font {
-        Font.custom(customFontFamily, size: 20, relativeTo: .title2)
-    }
-    
     public static var customTitle3: Font {
         Font.custom(customFontFamily, size: 16, relativeTo: .title3)
-    }
-    
-    public static var customBody: Font {
-        Font.custom(customFontFamily, size: 14, relativeTo: .body)
     }
     
     public static var customFootnote: Font {
