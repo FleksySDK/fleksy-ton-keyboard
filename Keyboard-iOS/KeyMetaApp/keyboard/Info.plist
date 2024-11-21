@@ -23,8 +23,8 @@
 		<string>$(PRODUCT_MODULE_NAME).KeyboardViewController</string>
 	</dict>
 	<key>SDKLicenseKey</key>
-	<string>$(SDK_LICENSE_KEY)</string>
+	<string>50c4f117-5399-4361-a16f-1d21d9dadf15</string>
 	<key>SDKLicenseSecret</key>
-	<string>$(SDK_LICENSE_SECRET)</string>
+	<string>9f4afe1db0d3c747e96433c48235c4d7</string>
 </dict>
 </plist>

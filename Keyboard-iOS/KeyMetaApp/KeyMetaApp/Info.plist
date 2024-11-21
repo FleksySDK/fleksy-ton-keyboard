@@ -19,10 +19,6 @@
 	</array>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
-	<key>SDKLicenseKey</key>
-	<string>$(SDK_LICENSE_KEY)</string>
-	<key>SDKLicenseSecret</key>
-	<string>$(SDK_LICENSE_SECRET)</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>SF-Georgian-Rounded.ttf</string>
