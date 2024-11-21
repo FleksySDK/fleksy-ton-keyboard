@@ -38,7 +38,7 @@ struct KeyMetaApp: App {
                                 }
                                 .tag(Tab.settings)
                         }
-                        AboutAppView()
+                        WalletView()
                             .tabItem {
                                 //TODO: Add final title and logo
                                 Label("About", systemImage: "questionmark.circle")

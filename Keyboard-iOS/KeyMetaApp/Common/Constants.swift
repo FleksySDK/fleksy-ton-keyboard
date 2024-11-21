@@ -8,8 +8,6 @@
 import Foundation
 
 enum Constants {
-    
-    static let SubscribeKeyboardAppId: String = "co.thingthing.KeyMeta.SubscribeKeyboardApp"
-    
+        
     static let FullAccessKeyboardAppId: String = "co.thingthing.KeyMeta.FullAccessKeyboardApp"
 }

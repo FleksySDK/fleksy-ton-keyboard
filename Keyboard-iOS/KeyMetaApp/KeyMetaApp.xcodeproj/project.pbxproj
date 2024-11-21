@@ -13,10 +13,6 @@
 		7552B61B2C00667D00FAEB15 /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E471832BB42BCB00E296D7 /* AppFont.swift */; };
 		7552B6202C006C7600FAEB15 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7552B61F2C006C7600FAEB15 /* Constants.swift */; };
 		7552B6212C006C7900FAEB15 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7552B61F2C006C7600FAEB15 /* Constants.swift */; };
-		7556768F2BDA6C1E003D192E /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7556768E2BDA6C1E003D192E /* Preferences.swift */; };
-		755676902BDA6C1E003D192E /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7556768E2BDA6C1E003D192E /* Preferences.swift */; };
-		755676922BDA7230003D192E /* UserDefaultPropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755676912BDA7230003D192E /* UserDefaultPropertyWrapper.swift */; };
-		755676932BDA7230003D192E /* UserDefaultPropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755676912BDA7230003D192E /* UserDefaultPropertyWrapper.swift */; };
 		756048902BD680820064E547 /* darkTheme.json in Resources */ = {isa = PBXBuildFile; fileRef = 7560488B2BD67FCB0064E547 /* darkTheme.json */; };
 		75E471842BB42BCB00E296D7 /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E471832BB42BCB00E296D7 /* AppFont.swift */; };
 		75FA339E2B99CDEA00F4DBFC /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FA339D2B99CDEA00F4DBFC /* KeyboardViewController.swift */; };
@@ -34,7 +30,7 @@
 		C7A4788F2CEF3FC900F417A7 /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7A478752CEF3FC900F417A7 /* Launch.storyboard */; };
 		C7A478902CEF3FC900F417A7 /* SF-Georgian-Rounded.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7A478762CEF3FC900F417A7 /* SF-Georgian-Rounded.ttf */; };
 		C7A478912CEF3FC900F417A7 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A478782CEF3FC900F417A7 /* WebView.swift */; };
-		C7A478922CEF3FC900F417A7 /* AboutAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A478792CEF3FC900F417A7 /* AboutAppView.swift */; };
+		C7A478922CEF3FC900F417A7 /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A478792CEF3FC900F417A7 /* WalletView.swift */; };
 		C7A478932CEF3FC900F417A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7A4787B2CEF3FC900F417A7 /* Preview Assets.xcassets */; };
 		C7A478942CEF3FC900F417A7 /* KeyMetaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A4787C2CEF3FC900F417A7 /* KeyMetaApp.swift */; };
 		C7A478952CEF3FC900F417A7 /* BoolSettingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A4787E2CEF3FC900F417A7 /* BoolSettingItem.swift */; };
@@ -72,8 +68,6 @@
 		751E3C622B99CD6700B9BEDE /* KeyMeta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyMeta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7552B6192C00662200FAEB15 /* ActionKeyboardAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionKeyboardAppView.swift; sourceTree = "<group>"; };
 		7552B61F2C006C7600FAEB15 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		7556768E2BDA6C1E003D192E /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
-		755676912BDA7230003D192E /* UserDefaultPropertyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultPropertyWrapper.swift; sourceTree = "<group>"; };
 		7560488B2BD67FCB0064E547 /* darkTheme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = darkTheme.json; sourceTree = "<group>"; };
 		75E471832BB42BCB00E296D7 /* AppFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFont.swift; sourceTree = "<group>"; };
 		75FA339B2B99CDEA00F4DBFC /* Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Keyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,7 +86,7 @@
 		C7A478752CEF3FC900F417A7 /* Launch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
 		C7A478762CEF3FC900F417A7 /* SF-Georgian-Rounded.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Georgian-Rounded.ttf"; sourceTree = "<group>"; };
 		C7A478782CEF3FC900F417A7 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
-		C7A478792CEF3FC900F417A7 /* AboutAppView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutAppView.swift; sourceTree = "<group>"; };
+		C7A478792CEF3FC900F417A7 /* WalletView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletView.swift; sourceTree = "<group>"; };
 		C7A4787B2CEF3FC900F417A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C7A4787C2CEF3FC900F417A7 /* KeyMetaApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyMetaApp.swift; sourceTree = "<group>"; };
 		C7A4787E2CEF3FC900F417A7 /* BoolSettingItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoolSettingItem.swift; sourceTree = "<group>"; };
@@ -162,8 +156,6 @@
 			isa = PBXGroup;
 			children = (
 				75E471822BB42BBB00E296D7 /* Utilities */,
-				7556768E2BDA6C1E003D192E /* Preferences.swift */,
-				755676912BDA7230003D192E /* UserDefaultPropertyWrapper.swift */,
 				7552B61F2C006C7600FAEB15 /* Constants.swift */,
 			);
 			path = Common;
@@ -215,7 +207,7 @@
 				C7A4786F2CEF3FC900F417A7 /* Util */,
 				C7A478722CEF3FC900F417A7 /* Resources */,
 				C7A478772CEF3FC900F417A7 /* WebView */,
-				C7A478792CEF3FC900F417A7 /* AboutAppView.swift */,
+				C7A478792CEF3FC900F417A7 /* WalletView.swift */,
 				C7A4787A2CEF3FC900F417A7 /* Preview Content */,
 				C7A4787C2CEF3FC900F417A7 /* KeyMetaApp.swift */,
 				C7A4787D2CEF3FC900F417A7 /* UIComponents */,
@@ -412,7 +404,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7552B6212C006C7900FAEB15 /* Constants.swift in Sources */,
-				7556768F2BDA6C1E003D192E /* Preferences.swift in Sources */,
 				C7A4788B2CEF3FC900F417A7 /* KeyboardSettingsView.swift in Sources */,
 				C7A4788C2CEF3FC900F417A7 /* OpenSettings.swift in Sources */,
 				C7A478952CEF3FC900F417A7 /* BoolSettingItem.swift in Sources */,
@@ -421,9 +412,8 @@
 				C7A478962CEF3FC900F417A7 /* KeyboardInstallationState.swift in Sources */,
 				C7A478912CEF3FC900F417A7 /* WebView.swift in Sources */,
 				C7A4788A2CEF3FC900F417A7 /* KeyboardSettingsModels.swift in Sources */,
-				755676922BDA7230003D192E /* UserDefaultPropertyWrapper.swift in Sources */,
 				75E471842BB42BCB00E296D7 /* AppFont.swift in Sources */,
-				C7A478922CEF3FC900F417A7 /* AboutAppView.swift in Sources */,
+				C7A478922CEF3FC900F417A7 /* WalletView.swift in Sources */,
 				C7A478842CEF3FC900F417A7 /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,10 +424,8 @@
 			files = (
 				7552B61B2C00667D00FAEB15 /* AppFont.swift in Sources */,
 				7552B61A2C00662200FAEB15 /* ActionKeyboardAppView.swift in Sources */,
-				755676902BDA6C1E003D192E /* Preferences.swift in Sources */,
 				751A20012C11929C00AC38DA /* FullAccessKeyboardApp.swift in Sources */,
 				7552B6202C006C7600FAEB15 /* Constants.swift in Sources */,
-				755676932BDA7230003D192E /* UserDefaultPropertyWrapper.swift in Sources */,
 				75FA339E2B99CDEA00F4DBFC /* KeyboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
