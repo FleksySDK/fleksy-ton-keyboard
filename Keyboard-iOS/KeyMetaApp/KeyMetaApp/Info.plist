@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AppGroupName</key>
+	<string>group.co.thingthing.KeyMeta</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+			<key>CFBundleURLName</key>
+			<string>co.thingthing.KeyMeta</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>keymetaapp</string>
+			</array>
+		</dict>
+	</array>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>SDKLicenseKey</key>
+	<string>$(SDK_LICENSE_KEY)</string>
+	<key>SDKLicenseSecret</key>
+	<string>$(SDK_LICENSE_SECRET)</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>SF-Georgian-Rounded.ttf</string>
+	</array>
+</dict>
+</plist>

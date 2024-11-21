@@ -1,0 +1,9 @@
+//  Release.xcconfig
+//  KeyMeta
+//
+//  Copyright © 2024 Thingthing. All rights reserved.
+//
+//
+
+#include? "SDKCredentials.Release.xcconfig"
+#include "Shared.xcconfig"

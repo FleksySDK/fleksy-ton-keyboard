@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aRi-zg-Ufu">
+                                <rect key="frame" x="0.0" y="59" width="393" height="275.66666666666669"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IconLaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="ckU-jG-l4h">
+                                <rect key="frame" x="131" y="334.66666666666669" width="131" height="131"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ckU-jG-l4h" secondAttribute="height" id="UJS-UZ-BZB"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YfC-kH-qrH">
+                                <rect key="frame" x="0.0" y="465.66666666666663" width="393" height="275.66666666666663"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KeyMeta" translatesAutoresizingMaskIntoConstraints="NO" id="wy6-wm-3ge">
+                                <rect key="frame" x="138" y="741.33333333333337" width="117" height="26.666666666666629"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ckU-jG-l4h" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="18L-AX-e7O"/>
+                            <constraint firstItem="YfC-kH-qrH" firstAttribute="top" secondItem="ckU-jG-l4h" secondAttribute="bottom" id="3lq-D2-IDa"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="aRi-zg-Ufu" secondAttribute="trailing" id="89b-SH-AWX"/>
+                            <constraint firstItem="YfC-kH-qrH" firstAttribute="height" secondItem="aRi-zg-Ufu" secondAttribute="height" id="A58-kF-yvl"/>
+                            <constraint firstItem="wy6-wm-3ge" firstAttribute="top" secondItem="YfC-kH-qrH" secondAttribute="bottom" id="M4p-cm-m1c"/>
+                            <constraint firstItem="ckU-jG-l4h" firstAttribute="width" secondItem="vDu-zF-Fre" secondAttribute="width" multiplier="1:3" priority="999" id="Pln-gk-Ob7"/>
+                            <constraint firstItem="YfC-kH-qrH" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Vii-Xp-UeT"/>
+                            <constraint firstItem="aRi-zg-Ufu" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="dkQ-nZ-znb"/>
+                            <constraint firstItem="YfC-kH-qrH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="dlk-ju-uzJ"/>
+                            <constraint firstItem="aRi-zg-Ufu" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="eD9-rs-KRm"/>
+                            <constraint firstItem="wy6-wm-3ge" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="jxN-nT-hjM"/>
+                            <constraint firstItem="ckU-jG-l4h" firstAttribute="top" secondItem="aRi-zg-Ufu" secondAttribute="bottom" id="lO8-6J-SkV"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="wy6-wm-3ge" secondAttribute="bottom" constant="50" id="m84-AC-sdA"/>
+                            <constraint firstItem="ckU-jG-l4h" firstAttribute="height" relation="lessThanOrEqual" secondItem="vDu-zF-Fre" secondAttribute="height" multiplier="1:3" id="tcE-Xn-XE2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="26"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IconLaunchScreen" width="1024" height="1024"/>
+        <image name="KeyMeta" width="118" height="27"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
