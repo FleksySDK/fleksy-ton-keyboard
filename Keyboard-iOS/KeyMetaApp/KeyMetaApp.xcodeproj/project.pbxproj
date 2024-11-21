@@ -9,33 +9,21 @@
 /* Begin PBXBuildFile section */
 		750D8E1B2BD1097E0007DC3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 750D8E1A2BD1097E0007DC3D /* Assets.xcassets */; };
 		751A20012C11929C00AC38DA /* FullAccessKeyboardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751A20002C11929C00AC38DA /* FullAccessKeyboardApp.swift */; };
-		753F66AC2BFF5DE700A61994 /* MediKeyStoreMetadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = 753F66AB2BFF5DE700A61994 /* MediKeyStoreMetadata.plist */; };
-		753F66AD2BFF63B400A61994 /* SubscriptionOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758C15F42BFF30790059BFDA /* SubscriptionOption.swift */; };
-		753F66AE2BFF63C800A61994 /* MediKeyStoreMetadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = 753F66AB2BFF5DE700A61994 /* MediKeyStoreMetadata.plist */; };
-		7552B6182C00658800FAEB15 /* SubscribeKeyboardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7552B6172C00658800FAEB15 /* SubscribeKeyboardApp.swift */; };
 		7552B61A2C00662200FAEB15 /* ActionKeyboardAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7552B6192C00662200FAEB15 /* ActionKeyboardAppView.swift */; };
 		7552B61B2C00667D00FAEB15 /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E471832BB42BCB00E296D7 /* AppFont.swift */; };
-		7552B61D2C00683C00FAEB15 /* SubscribeKeyboardAppTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7552B61C2C00683C00FAEB15 /* SubscribeKeyboardAppTracker.swift */; };
 		7552B6202C006C7600FAEB15 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7552B61F2C006C7600FAEB15 /* Constants.swift */; };
 		7552B6212C006C7900FAEB15 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7552B61F2C006C7600FAEB15 /* Constants.swift */; };
-		7556768C2BDA619E003D192E /* SubscriptionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757523F62BD123AE005F7042 /* SubscriptionStore.swift */; };
 		7556768F2BDA6C1E003D192E /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7556768E2BDA6C1E003D192E /* Preferences.swift */; };
 		755676902BDA6C1E003D192E /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7556768E2BDA6C1E003D192E /* Preferences.swift */; };
 		755676922BDA7230003D192E /* UserDefaultPropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755676912BDA7230003D192E /* UserDefaultPropertyWrapper.swift */; };
 		755676932BDA7230003D192E /* UserDefaultPropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755676912BDA7230003D192E /* UserDefaultPropertyWrapper.swift */; };
 		756048902BD680820064E547 /* darkTheme.json in Resources */ = {isa = PBXBuildFile; fileRef = 7560488B2BD67FCB0064E547 /* darkTheme.json */; };
-		757523F72BD123AE005F7042 /* SubscriptionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757523F62BD123AE005F7042 /* SubscriptionStore.swift */; };
-		758C15F52BFF30790059BFDA /* SubscriptionOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758C15F42BFF30790059BFDA /* SubscriptionOption.swift */; };
 		75E471842BB42BCB00E296D7 /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E471832BB42BCB00E296D7 /* AppFont.swift */; };
 		75FA339E2B99CDEA00F4DBFC /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FA339D2B99CDEA00F4DBFC /* KeyboardViewController.swift */; };
 		75FA33A22B99CDEA00F4DBFC /* Keyboard.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 75FA339B2B99CDEA00F4DBFC /* Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		75FA33A92B99CE1600F4DBFC /* FleksySDK in Frameworks */ = {isa = PBXBuildFile; productRef = 75FA33A82B99CE1600F4DBFC /* FleksySDK */; };
 		75FA33AC2B99CE8200F4DBFC /* FleksySDK in Frameworks */ = {isa = PBXBuildFile; productRef = 75FA33AB2B99CE8200F4DBFC /* FleksySDK */; };
-		C7A478822CEF3FC900F417A7 /* SubscriptionOptionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A478632CEF3FC900F417A7 /* SubscriptionOptionRow.swift */; };
-		C7A478832CEF3FC900F417A7 /* SubscriptionItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A478642CEF3FC900F417A7 /* SubscriptionItemCell.swift */; };
 		C7A478842CEF3FC900F417A7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A478652CEF3FC900F417A7 /* HomeView.swift */; };
-		C7A478852CEF3FC900F417A7 /* BuyButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A478662CEF3FC900F417A7 /* BuyButtonStyle.swift */; };
-		C7A478862CEF3FC900F417A7 /* SubscriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A478672CEF3FC900F417A7 /* SubscriptionView.swift */; };
 		C7A478872CEF3FC900F417A7 /* Shared.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = C7A478692CEF3FC900F417A7 /* Shared.xcconfig */; };
 		C7A478882CEF3FC900F417A7 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = C7A4786A2CEF3FC900F417A7 /* Debug.xcconfig */; };
 		C7A478892CEF3FC900F417A7 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = C7A4786B2CEF3FC900F417A7 /* Release.xcconfig */; };
@@ -43,7 +31,6 @@
 		C7A4788B2CEF3FC900F417A7 /* KeyboardSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A4786E2CEF3FC900F417A7 /* KeyboardSettingsView.swift */; };
 		C7A4788C2CEF3FC900F417A7 /* OpenSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A478702CEF3FC900F417A7 /* OpenSettings.swift */; };
 		C7A4788D2CEF3FC900F417A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7A478732CEF3FC900F417A7 /* Assets.xcassets */; };
-		C7A4788E2CEF3FC900F417A7 /* MediKey.storekit in Resources */ = {isa = PBXBuildFile; fileRef = C7A478742CEF3FC900F417A7 /* MediKey.storekit */; };
 		C7A4788F2CEF3FC900F417A7 /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7A478752CEF3FC900F417A7 /* Launch.storyboard */; };
 		C7A478902CEF3FC900F417A7 /* SF-Georgian-Rounded.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7A478762CEF3FC900F417A7 /* SF-Georgian-Rounded.ttf */; };
 		C7A478912CEF3FC900F417A7 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A478782CEF3FC900F417A7 /* WebView.swift */; };
@@ -83,27 +70,18 @@
 		750D8E1A2BD1097E0007DC3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		751A20002C11929C00AC38DA /* FullAccessKeyboardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullAccessKeyboardApp.swift; sourceTree = "<group>"; };
 		751E3C622B99CD6700B9BEDE /* KeyMeta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyMeta.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		753F66AB2BFF5DE700A61994 /* MediKeyStoreMetadata.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MediKeyStoreMetadata.plist; sourceTree = "<group>"; };
-		7552B6172C00658800FAEB15 /* SubscribeKeyboardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeKeyboardApp.swift; sourceTree = "<group>"; };
 		7552B6192C00662200FAEB15 /* ActionKeyboardAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionKeyboardAppView.swift; sourceTree = "<group>"; };
-		7552B61C2C00683C00FAEB15 /* SubscribeKeyboardAppTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeKeyboardAppTracker.swift; sourceTree = "<group>"; };
 		7552B61F2C006C7600FAEB15 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7556768E2BDA6C1E003D192E /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 		755676912BDA7230003D192E /* UserDefaultPropertyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultPropertyWrapper.swift; sourceTree = "<group>"; };
 		7560488B2BD67FCB0064E547 /* darkTheme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = darkTheme.json; sourceTree = "<group>"; };
-		757523F62BD123AE005F7042 /* SubscriptionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionStore.swift; sourceTree = "<group>"; };
-		758C15F42BFF30790059BFDA /* SubscriptionOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionOption.swift; sourceTree = "<group>"; };
 		75E471832BB42BCB00E296D7 /* AppFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFont.swift; sourceTree = "<group>"; };
 		75FA339B2B99CDEA00F4DBFC /* Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Keyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		75FA339D2B99CDEA00F4DBFC /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		75FA339F2B99CDEA00F4DBFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75FA33AE2B99CED000F4DBFC /* Keyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Keyboard.entitlements; sourceTree = "<group>"; };
 		C70DA9972CEF41FD000668D8 /* KeyMetaApp.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = KeyMetaApp.entitlements; sourceTree = "<group>"; };
-		C7A478632CEF3FC900F417A7 /* SubscriptionOptionRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionOptionRow.swift; sourceTree = "<group>"; };
-		C7A478642CEF3FC900F417A7 /* SubscriptionItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionItemCell.swift; sourceTree = "<group>"; };
 		C7A478652CEF3FC900F417A7 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		C7A478662CEF3FC900F417A7 /* BuyButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyButtonStyle.swift; sourceTree = "<group>"; };
-		C7A478672CEF3FC900F417A7 /* SubscriptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionView.swift; sourceTree = "<group>"; };
 		C7A478692CEF3FC900F417A7 /* Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
 		C7A4786A2CEF3FC900F417A7 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		C7A4786B2CEF3FC900F417A7 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
@@ -111,7 +89,6 @@
 		C7A4786E2CEF3FC900F417A7 /* KeyboardSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardSettingsView.swift; sourceTree = "<group>"; };
 		C7A478702CEF3FC900F417A7 /* OpenSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenSettings.swift; sourceTree = "<group>"; };
 		C7A478732CEF3FC900F417A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C7A478742CEF3FC900F417A7 /* MediKey.storekit */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MediKey.storekit; sourceTree = "<group>"; };
 		C7A478752CEF3FC900F417A7 /* Launch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
 		C7A478762CEF3FC900F417A7 /* SF-Georgian-Rounded.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Georgian-Rounded.ttf"; sourceTree = "<group>"; };
 		C7A478782CEF3FC900F417A7 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
@@ -149,7 +126,6 @@
 			children = (
 				7552B6192C00662200FAEB15 /* ActionKeyboardAppView.swift */,
 				751A1FFF2C11928900AC38DA /* FullAccessKeyboardApp */,
-				7552B6162C00655400FAEB15 /* SubscribeKeyboardApp */,
 			);
 			path = KeyboardApps;
 			sourceTree = "<group>";
@@ -182,35 +158,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7552B6162C00655400FAEB15 /* SubscribeKeyboardApp */ = {
-			isa = PBXGroup;
-			children = (
-				7552B6172C00658800FAEB15 /* SubscribeKeyboardApp.swift */,
-				7552B61C2C00683C00FAEB15 /* SubscribeKeyboardAppTracker.swift */,
-			);
-			path = SubscribeKeyboardApp;
-			sourceTree = "<group>";
-		};
 		7556768D2BDA6BBE003D192E /* Common */ = {
 			isa = PBXGroup;
 			children = (
 				75E471822BB42BBB00E296D7 /* Utilities */,
-				755676942BDA7DB7003D192E /* Resources */,
-				757523F62BD123AE005F7042 /* SubscriptionStore.swift */,
-				758C15F42BFF30790059BFDA /* SubscriptionOption.swift */,
 				7556768E2BDA6C1E003D192E /* Preferences.swift */,
 				755676912BDA7230003D192E /* UserDefaultPropertyWrapper.swift */,
 				7552B61F2C006C7600FAEB15 /* Constants.swift */,
 			);
 			path = Common;
-			sourceTree = "<group>";
-		};
-		755676942BDA7DB7003D192E /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				753F66AB2BFF5DE700A61994 /* MediKeyStoreMetadata.plist */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		75E471822BB42BBB00E296D7 /* Utilities */ = {
@@ -273,11 +229,7 @@
 		C7A478622CEF3FC900F417A7 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				C7A478632CEF3FC900F417A7 /* SubscriptionOptionRow.swift */,
-				C7A478642CEF3FC900F417A7 /* SubscriptionItemCell.swift */,
 				C7A478652CEF3FC900F417A7 /* HomeView.swift */,
-				C7A478662CEF3FC900F417A7 /* BuyButtonStyle.swift */,
-				C7A478672CEF3FC900F417A7 /* SubscriptionView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -313,7 +265,6 @@
 			isa = PBXGroup;
 			children = (
 				C7A478732CEF3FC900F417A7 /* Assets.xcassets */,
-				C7A478742CEF3FC900F417A7 /* MediKey.storekit */,
 				C7A478752CEF3FC900F417A7 /* Launch.storyboard */,
 				C7A478762CEF3FC900F417A7 /* SF-Georgian-Rounded.ttf */,
 			);
@@ -435,11 +386,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7A478892CEF3FC900F417A7 /* Release.xcconfig in Resources */,
-				C7A4788E2CEF3FC900F417A7 /* MediKey.storekit in Resources */,
 				C7A478902CEF3FC900F417A7 /* SF-Georgian-Rounded.ttf in Resources */,
 				C7A478882CEF3FC900F417A7 /* Debug.xcconfig in Resources */,
 				C7A478932CEF3FC900F417A7 /* Preview Assets.xcassets in Resources */,
-				753F66AC2BFF5DE700A61994 /* MediKeyStoreMetadata.plist in Resources */,
 				C7A4788F2CEF3FC900F417A7 /* Launch.storyboard in Resources */,
 				C7A4788D2CEF3FC900F417A7 /* Assets.xcassets in Resources */,
 				C7A478872CEF3FC900F417A7 /* Shared.xcconfig in Resources */,
@@ -450,7 +399,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				753F66AE2BFF63C800A61994 /* MediKeyStoreMetadata.plist in Resources */,
 				750D8E1B2BD1097E0007DC3D /* Assets.xcassets in Resources */,
 				756048902BD680820064E547 /* darkTheme.json in Resources */,
 			);
@@ -464,17 +412,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7552B6212C006C7900FAEB15 /* Constants.swift in Sources */,
-				C7A478822CEF3FC900F417A7 /* SubscriptionOptionRow.swift in Sources */,
-				758C15F52BFF30790059BFDA /* SubscriptionOption.swift in Sources */,
 				7556768F2BDA6C1E003D192E /* Preferences.swift in Sources */,
-				C7A478832CEF3FC900F417A7 /* SubscriptionItemCell.swift in Sources */,
 				C7A4788B2CEF3FC900F417A7 /* KeyboardSettingsView.swift in Sources */,
 				C7A4788C2CEF3FC900F417A7 /* OpenSettings.swift in Sources */,
 				C7A478952CEF3FC900F417A7 /* BoolSettingItem.swift in Sources */,
-				757523F72BD123AE005F7042 /* SubscriptionStore.swift in Sources */,
 				C7A478972CEF3FC900F417A7 /* OnboardingView.swift in Sources */,
-				C7A478852CEF3FC900F417A7 /* BuyButtonStyle.swift in Sources */,
-				C7A478862CEF3FC900F417A7 /* SubscriptionView.swift in Sources */,
 				C7A478942CEF3FC900F417A7 /* KeyMetaApp.swift in Sources */,
 				C7A478962CEF3FC900F417A7 /* KeyboardInstallationState.swift in Sources */,
 				C7A478912CEF3FC900F417A7 /* WebView.swift in Sources */,
@@ -492,15 +434,11 @@
 			files = (
 				7552B61B2C00667D00FAEB15 /* AppFont.swift in Sources */,
 				7552B61A2C00662200FAEB15 /* ActionKeyboardAppView.swift in Sources */,
-				7556768C2BDA619E003D192E /* SubscriptionStore.swift in Sources */,
-				753F66AD2BFF63B400A61994 /* SubscriptionOption.swift in Sources */,
 				755676902BDA6C1E003D192E /* Preferences.swift in Sources */,
 				751A20012C11929C00AC38DA /* FullAccessKeyboardApp.swift in Sources */,
 				7552B6202C006C7600FAEB15 /* Constants.swift in Sources */,
 				755676932BDA7230003D192E /* UserDefaultPropertyWrapper.swift in Sources */,
 				75FA339E2B99CDEA00F4DBFC /* KeyboardViewController.swift in Sources */,
-				7552B61D2C00683C00FAEB15 /* SubscribeKeyboardAppTracker.swift in Sources */,
-				7552B6182C00658800FAEB15 /* SubscribeKeyboardApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

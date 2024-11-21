@@ -13,8 +13,6 @@ struct AboutAppView: View {
     private static let privacyPolicyURL = URL(string: "https://www.fleksy.com/privacy/")!
     private static let termsOfUseURL = URL(string: "https://www.fleksy.com/medical-keyboard-terms/")!
     
-    @EnvironmentObject private var store: SubscriptionStore
-    @State private var isShowingManageSubscriptions: Bool = false
     
     var body: some View {
         NavigationView {
@@ -27,18 +25,9 @@ struct AboutAppView: View {
                         WebView(url: Self.termsOfUseURL)
                     }
                 }
-                
-                if store.subscriptionGroupStatus.isSubscribed {
-                    Section {
-                        Button("Manage subscription") {
-                            isShowingManageSubscriptions = true
-                        }
-                    }
-                }
             }
             .navigationTitle("About")
         }
         .navigationViewStyle(.stack)
-        .manageSubscriptionsSheet(isPresented: $isShowingManageSubscriptions)
     }
 }

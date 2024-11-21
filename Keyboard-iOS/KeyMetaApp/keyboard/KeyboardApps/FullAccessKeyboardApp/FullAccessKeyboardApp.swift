@@ -48,7 +48,6 @@ class FullAccessKeyboardApp: KeyboardApp {
     // MARK: - Private methods
         
     @MainActor private func onCloseAction() {
-        SubscribeKeyboardAppTracker.shared.trackAppClosedManually()
         listener?.hide()
     }
     

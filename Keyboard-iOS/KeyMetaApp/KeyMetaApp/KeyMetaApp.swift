@@ -18,10 +18,6 @@ struct KeyMetaApp: App {
     
     @StateObject private var installationState = KeyboardInstallationState()
     
-    // Initialize the Store at app launch to start listening to transactions ASAP
-    @StateObject var store = SubscriptionStore()
-    
-    @State private var showUpgradeSheet: Bool = false
     @State private var openedTab: Tab?
     
     var body: some Scene {
@@ -33,7 +29,6 @@ struct KeyMetaApp: App {
                             .tabItem {
                                 Label("Home", systemImage: "house")
                             }
-                            .environmentObject(store)
                             .environmentObject(installationState)
                             .tag(Tab.home)
                         if installationState.fullAccessGranted {
@@ -48,7 +43,6 @@ struct KeyMetaApp: App {
                                 //TODO: Add final title and logo
                                 Label("About", systemImage: "questionmark.circle")
                             }
-                            .environmentObject(store)
                             .tag(Tab.about)
                     }
                 } else {
@@ -62,14 +56,6 @@ struct KeyMetaApp: App {
             .onReceive(NotificationCenter.default.publisher(for: UIScene.willEnterForegroundNotification), perform: { _ in
                 installationState.refreshState()
             })
-            .onOpenURL { url in
-                if url == Constants.subscriptionDeepLinkURL {
-                    openedTab = .home
-                    if !store.subscriptionGroupStatus.isSubscribed {
-                        showUpgradeSheet = true
-                    }
-                }
-            }
         }
     }
 }

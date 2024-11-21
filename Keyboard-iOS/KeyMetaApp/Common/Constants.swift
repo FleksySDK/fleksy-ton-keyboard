@@ -10,7 +10,6 @@ import Foundation
 enum Constants {
     
     static let SubscribeKeyboardAppId: String = "co.thingthing.KeyMeta.SubscribeKeyboardApp"
-    static let subscriptionDeepLinkURL = URL(string: "medikey://upgrade")!
     
     static let FullAccessKeyboardAppId: String = "co.thingthing.KeyMeta.FullAccessKeyboardApp"
 }

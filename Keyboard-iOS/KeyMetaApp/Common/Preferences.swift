@@ -19,10 +19,3 @@ extension UserDefaults {
         return defaults
     }()
 }
-
-final class Preferences {
-    
-    @UserDefault(key: "co.thingthing.KeyMeta.subscription.latestStatus",
-                 UserDefaults.appGroup)
-    static var latestSubscriptionStatus: RenewalState.RawValue?
-}

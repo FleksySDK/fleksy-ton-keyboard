@@ -11,31 +11,14 @@ import FleksyAppsCore
 
 class KeyboardViewController: FKKeyboardViewController {
     
-    /// Required to init as soon as possible to always refresh the latest subscription
-    private static let sharedStore = SubscriptionStore()
-    private var latestSubscriptionStatus: RenewalState? = Preferences.latestSubscriptionStatus.map { RenewalState(rawValue: $0) } {
-        didSet {
-            if oldValue.isSubscribed != latestSubscriptionStatus.isSubscribed {
-                reloadConfiguration()
-            }
-        }
-    }
-    
-    private var observation: AnyCancellable?
     override func viewDidLoad() {
-        let _ = Self.sharedStore
         super.viewDidLoad()
-        observation = Preferences.$latestSubscriptionStatus.sink { [weak self] (newStatus: RenewalState.RawValue?) in
-            self?.latestSubscriptionStatus = newStatus.map { RenewalState(rawValue: $0) }
-        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         if !hasFullAccess {
             openApp(appId: FullAccessKeyboardApp.appId)
-        } else if !latestSubscriptionStatus.isSubscribed && SubscribeKeyboardAppTracker.shared.shouldOpen() {
-            openApp(appId: SubscribeKeyboardApp.appId)
         }
     }
     
@@ -50,8 +33,6 @@ class KeyboardViewController: FKKeyboardViewController {
     }
     
     private func getStyleConfiguration() -> StyleConfiguration {
-        // Default light KeyboardTheme
-        let lightTheme = StyleConfiguration.defaultLightKeyboardTheme
         
         // Create dark KeyboardTheme from JSON file
         let darkThemeJSONFilepath = Bundle.main.path(forResource: "darkTheme", ofType: "json")!
@@ -68,8 +49,6 @@ class KeyboardViewController: FKKeyboardViewController {
         
         if !hasFullAccess {
             keyboardApps.append(FullAccessKeyboardApp())
-        } else if !latestSubscriptionStatus.isSubscribed, SubscribeKeyboardAppTracker.shared.shouldOpen() {
-            keyboardApps.append(SubscribeKeyboardApp())
         }
         
         let appsConfig = AppsConfiguration(keyboardApps: keyboardApps, showAppsInCarousel: false)
