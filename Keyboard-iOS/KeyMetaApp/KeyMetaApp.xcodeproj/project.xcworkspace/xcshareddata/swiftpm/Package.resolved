@@ -30,7 +30,7 @@
     {
       "identity" : "ios-fleksyappscore",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/FleksySDK/iOS-FleksyAppsCore.git",
+      "location" : "https://github.com/FleksySDK/iOS-FleksyAppsCore",
       "state" : {
         "revision" : "fbc2e5e6c79e8502887805db4724aca7b048180c",
         "version" : "1.3.2"

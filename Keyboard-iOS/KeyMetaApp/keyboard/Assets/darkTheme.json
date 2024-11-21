@@ -1,0 +1,31 @@
+{
+  "key" : "Dark",
+  "colors" : {
+    "key_background_pressed" : "#24454F",
+    "key_background" : "#577178",
+    "swipe_line" : "#FFFFFF",
+    "suggestion_background" : {
+
+    },
+    "track_pad_cursor" : "#FFFFFF",
+    "key_shadow" : "#577178",
+    "key_letters" : "#ffffff",
+    "hover_background" : "#24454F",
+    "hover_selected_background" : "#7E9297",
+    "hover_selected_letters" : "#FFFFFF",
+    "suggestion_selected_background" : "#577178",
+    "button_backspace_letters" : "#99A8AD",
+  },
+  "sounds" : {
+
+  },
+  "name" : "MediKeyDark",
+  "background" : {
+    "gradient" : [
+      "#33525B"
+    ],
+    "image_alpha" : 1,
+    "image_position" : "scale"
+  },
+  "extra" : "look_feel_system"
+}

@@ -1,0 +1,9 @@
+//  Debug.xcconfig
+//  KeyMeta
+//
+//  Copyright © 2024 Thingthing. All rights reserved.
+//
+//
+
+#include? "SDKCredentials.Debug.xcconfig"
+#include "Shared.xcconfig"

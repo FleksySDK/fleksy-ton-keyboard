@@ -1,0 +1,9 @@
+//  Release.xcconfig
+//  KeyMeta
+//
+//  Copyright © 2024 Thingthing. All rights reserved.
+//
+//
+
+APP_VERSION = 1.0.0
+APP_BUILD_NUMBER = 20

@@ -3,25 +3,29 @@
 <plist version="1.0">
 <dict>
 	<key>AppGroupName</key>
-	<string>group.thingthing.fleksysdk</string>
-	<key>UIApplicationSceneManifest</key>
-	<dict>
-		<key>UIApplicationSupportsMultipleScenes</key>
-		<false/>
-		<key>UISceneConfigurations</key>
+	<string>group.co.thingthing.KeyMeta</string>
+	<key>CFBundleURLTypes</key>
+	<array>
 		<dict>
-			<key>UIWindowSceneSessionRoleApplication</key>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+			<key>CFBundleURLName</key>
+			<string>co.thingthing.KeyMeta</string>
+			<key>CFBundleURLSchemes</key>
 			<array>
-				<dict>
-					<key>UISceneConfigurationName</key>
-					<string>Default Configuration</string>
-					<key>UISceneDelegateClassName</key>
-					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
-					<key>UISceneStoryboardFile</key>
-					<string>Main</string>
-				</dict>
+				<string>keymetaapp</string>
 			</array>
 		</dict>
-	</dict>
+	</array>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>SDKLicenseKey</key>
+	<string>$(SDK_LICENSE_KEY)</string>
+	<key>SDKLicenseSecret</key>
+	<string>$(SDK_LICENSE_SECRET)</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>SF-Georgian-Rounded.ttf</string>
+	</array>
 </dict>
 </plist>

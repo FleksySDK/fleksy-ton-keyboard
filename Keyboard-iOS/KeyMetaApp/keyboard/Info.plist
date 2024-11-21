@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>AppGroupName</key>
-	<string>group.thingthing.fleksysdk</string>
+	<string>group.co.thingthing.KeyMeta</string>
 	<key>NSExtension</key>
 	<dict>
 		<key>NSExtensionAttributes</key>
 		<dict>
 			<key>IsASCIICapable</key>
-			<true/>
+			<false/>
 			<key>PrefersRightToLeft</key>
 			<false/>
 			<key>PrimaryLanguage</key>
@@ -22,5 +22,9 @@
 		<key>NSExtensionPrincipalClass</key>
 		<string>$(PRODUCT_MODULE_NAME).KeyboardViewController</string>
 	</dict>
+	<key>SDKLicenseKey</key>
+	<string>$(SDK_LICENSE_KEY)</string>
+	<key>SDKLicenseSecret</key>
+	<string>$(SDK_LICENSE_SECRET)</string>
 </dict>
 </plist>
