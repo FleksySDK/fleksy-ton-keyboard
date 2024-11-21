@@ -34,13 +34,15 @@ class KeyboardViewController: FKKeyboardViewController {
     
     private func getStyleConfiguration() -> StyleConfiguration {
         
+        let darkTheme = StyleConfiguration.defaultDarkKeyboardTheme
+        
         // Create dark KeyboardTheme from JSON file
-        let darkThemeJSONFilepath = Bundle.main.path(forResource: "darkTheme", ofType: "json")!
-        let darkThemeJSON = try! String(contentsOfFile: darkThemeJSONFilepath)
-        let darkTheme = KeyboardTheme(jsonString: darkThemeJSON)!
+        //let darkThemeJSONFilepath = Bundle.main.path(forResource: "darkTheme", ofType: "json")!
+        //let darkThemeJSON = try! String(contentsOfFile: darkThemeJSONFilepath)
+        //let darkTheme = KeyboardTheme(jsonString: darkThemeJSON)!
         
         // Create StyleConfiguration object
-        return StyleConfiguration(theme: darkTheme, darkTheme: darkTheme, spacebarLogoImage: UIImage(named: "SpacebarLogo"), spacebarStyle: .spacebarStyle_LogoOnly, spacebarLogoContentMode: .scaleAspectFit)
+        return StyleConfiguration(spacebarLogoImage:UIImage(named: "SpacebarLogoKeyMeta"), spacebarStyle: .spacebarStyle_LogoOnly, spacebarLogoContentMode: .scaleAspectFit)
     }
 
     override func createConfiguration() -> KeyboardConfiguration {
