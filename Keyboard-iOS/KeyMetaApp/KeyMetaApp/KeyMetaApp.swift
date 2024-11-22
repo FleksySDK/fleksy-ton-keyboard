@@ -17,6 +17,7 @@ struct KeyMetaApp: App {
     }
     
     @StateObject private var installationState = KeyboardInstallationState()
+    @StateObject private var viewStateManager = ViewStateManager()
     
     @State private var openedTab: Tab?
     
@@ -44,6 +45,9 @@ struct KeyMetaApp: App {
                                 Label("About", systemImage: "questionmark.circle")
                             }
                             .tag(Tab.about)
+                            .environmentObject(viewStateManager)
+                                            .onOpenURL { _ in
+                                            }
                     }
                 } else {
                     OnboardingView()
