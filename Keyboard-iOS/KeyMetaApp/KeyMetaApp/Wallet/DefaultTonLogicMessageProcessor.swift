@@ -38,31 +38,35 @@ class DefaultTonLogicMessageProcessor: TonLogicMessageProcessor {
                             print("Error fetching jetton info: \(error)")
                         }
                     }
-                    
-                    /*
-                    Task {
-                        do {
-                            let result = try await self.sendJettons(
-                                receiverAddress: message.message,
-                                payload: "{}"
-                            )
-                            print("Send jettons result: \(result)")
-                        } catch {
-                            print("Error sending jettons: \(error)")
-                        }
-                    }
-                     */
                 }
             }
         case "onDisconnectWallet":
             DispatchQueue.main.async {
                 self.viewStateManager.walletState.disconnect()
             }
+        case "OnDataValidation":
+            DispatchQueue.main.async {
+                guard let jettonWalletAddress = self.viewStateManager.walletState.jettonWalletAddress else {
+                    return
+                }
+                
+                Task {
+                    do {
+                        let result = try await self.sendJettons(
+                            receiverAddress: jettonWalletAddress,
+                            payload: message.message
+                        )
+                        print("Send jettons result: \(result)")
+                    } catch {
+                        print("Error sending jettons: \(error)")
+                    }
+                }
+            }
         default:
             print("Unknown message type: \(message.type)")
         }
     }
-
+    
     func fetchJettonInfo(walletAddress: String) async throws -> [String: Any] {        
         let path = "/api/jettons-info/\(walletAddress)"
         
@@ -83,7 +87,7 @@ class DefaultTonLogicMessageProcessor: TonLogicMessageProcessor {
         
         return jsonResult
     }
-
+    
     func sendJettons(receiverAddress: String, payload: String) async throws -> [String: Any] {
         let path = "/api/send-jettons"
         

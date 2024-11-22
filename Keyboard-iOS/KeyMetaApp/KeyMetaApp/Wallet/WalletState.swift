@@ -13,7 +13,7 @@ class WalletState: ObservableObject {
     @Published var address: String = ""
     @Published var jettonBalance: Double = 0.0
     @Published var jettonMetadata: JettonMetadata?
-    @Published var jettonWalletAddress: String = ""
+    @Published var jettonWalletAddress: String?
     
     func connect(address: String) {
         self.address = address
@@ -24,7 +24,7 @@ class WalletState: ObservableObject {
         self.address = ""
         self.isConnected = false
         self.jettonBalance = 0
-        self.jettonWalletAddress = ""
+        self.jettonWalletAddress = nil
         self.jettonMetadata = nil
     }
 
