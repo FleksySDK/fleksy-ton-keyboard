@@ -2,7 +2,7 @@ import SwiftUI
 
 class DefaultTonLogicMessageProcessor: TonLogicMessageProcessor {
     private let viewStateManager: ViewStateManager
-    private let baseURL = "https://egret-shining-whippet.ngrok-free.app";
+    private let baseURL = "https://fleksy-ton-keyboard.onrender.com";
     
     required init(viewStateManager: ViewStateManager) {
         self.viewStateManager = viewStateManager
@@ -46,14 +46,12 @@ class DefaultTonLogicMessageProcessor: TonLogicMessageProcessor {
             }
         case "OnDataValidation":
             DispatchQueue.main.async {
-                guard let jettonWalletAddress = self.viewStateManager.walletState.jettonWalletAddress else {
-                    return
-                }
+                let walletAddress = self.viewStateManager.walletState.address
                 
                 Task {
                     do {
                         let result = try await self.sendJettons(
-                            receiverAddress: jettonWalletAddress,
+                            receiverAddress: walletAddress,
                             payload: message.message
                         )
                         print("Send jettons result: \(result)")
