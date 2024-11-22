@@ -10,10 +10,10 @@
 			<key>CFBundleTypeRole</key>
 			<string>Viewer</string>
 			<key>CFBundleURLName</key>
-			<string>co.thingthing.KeyMeta</string>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>keymetaapp</string>
+				<string>kmc</string>
 			</array>
 		</dict>
 	</array>

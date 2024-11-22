@@ -29,12 +29,16 @@
 		C7A4788F2CEF3FC900F417A7 /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7A478752CEF3FC900F417A7 /* Launch.storyboard */; };
 		C7A478902CEF3FC900F417A7 /* SF-Georgian-Rounded.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7A478762CEF3FC900F417A7 /* SF-Georgian-Rounded.ttf */; };
 		C7A478912CEF3FC900F417A7 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A478782CEF3FC900F417A7 /* WebView.swift */; };
-		C7A478922CEF3FC900F417A7 /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A478792CEF3FC900F417A7 /* WalletView.swift */; };
 		C7A478932CEF3FC900F417A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7A4787B2CEF3FC900F417A7 /* Preview Assets.xcassets */; };
 		C7A478942CEF3FC900F417A7 /* KeyMetaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A4787C2CEF3FC900F417A7 /* KeyMetaApp.swift */; };
 		C7A478952CEF3FC900F417A7 /* BoolSettingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A4787E2CEF3FC900F417A7 /* BoolSettingItem.swift */; };
 		C7A478962CEF3FC900F417A7 /* KeyboardInstallationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A4787F2CEF3FC900F417A7 /* KeyboardInstallationState.swift */; };
 		C7A478972CEF3FC900F417A7 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A478802CEF3FC900F417A7 /* OnboardingView.swift */; };
+		DE99B51F2CF07FC1005D9300 /* DefaultTonLogicMessageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99B51B2CF07FC1005D9300 /* DefaultTonLogicMessageProcessor.swift */; };
+		DE99B5202CF07FC1005D9300 /* TonLogicMessageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99B51C2CF07FC1005D9300 /* TonLogicMessageProcessor.swift */; };
+		DE99B5212CF07FC1005D9300 /* WalletState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99B51D2CF07FC1005D9300 /* WalletState.swift */; };
+		DE99B5222CF07FC1005D9300 /* ViewStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99B51E2CF07FC1005D9300 /* ViewStateManager.swift */; };
+		DE99B5242CF08220005D9300 /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99B5232CF08220005D9300 /* WalletView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,13 +88,17 @@
 		C7A478752CEF3FC900F417A7 /* Launch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
 		C7A478762CEF3FC900F417A7 /* SF-Georgian-Rounded.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Georgian-Rounded.ttf"; sourceTree = "<group>"; };
 		C7A478782CEF3FC900F417A7 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
-		C7A478792CEF3FC900F417A7 /* WalletView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletView.swift; sourceTree = "<group>"; };
 		C7A4787B2CEF3FC900F417A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C7A4787C2CEF3FC900F417A7 /* KeyMetaApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyMetaApp.swift; sourceTree = "<group>"; };
 		C7A4787E2CEF3FC900F417A7 /* BoolSettingItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoolSettingItem.swift; sourceTree = "<group>"; };
 		C7A4787F2CEF3FC900F417A7 /* KeyboardInstallationState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardInstallationState.swift; sourceTree = "<group>"; };
 		C7A478802CEF3FC900F417A7 /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		C7A478812CEF3FC900F417A7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE99B51B2CF07FC1005D9300 /* DefaultTonLogicMessageProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultTonLogicMessageProcessor.swift; sourceTree = "<group>"; };
+		DE99B51C2CF07FC1005D9300 /* TonLogicMessageProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TonLogicMessageProcessor.swift; sourceTree = "<group>"; };
+		DE99B51D2CF07FC1005D9300 /* WalletState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletState.swift; sourceTree = "<group>"; };
+		DE99B51E2CF07FC1005D9300 /* ViewStateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewStateManager.swift; sourceTree = "<group>"; };
+		DE99B5232CF08220005D9300 /* WalletView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,14 +205,13 @@
 		C7A478612CEF3FC900F417A7 /* KeyMetaApp */ = {
 			isa = PBXGroup;
 			children = (
+				DE99B51A2CF07F46005D9300 /* Wallet */,
 				C70DA9972CEF41FD000668D8 /* KeyMetaApp.entitlements */,
 				C7A478622CEF3FC900F417A7 /* Home */,
 				C7A478682CEF3FC900F417A7 /* Configuration */,
 				C7A4786C2CEF3FC900F417A7 /* KeyboardSettings */,
 				C7A4786F2CEF3FC900F417A7 /* Util */,
 				C7A478722CEF3FC900F417A7 /* Resources */,
-				C7A478772CEF3FC900F417A7 /* WebView */,
-				C7A478792CEF3FC900F417A7 /* WalletView.swift */,
 				C7A4787A2CEF3FC900F417A7 /* Preview Content */,
 				C7A4787C2CEF3FC900F417A7 /* KeyMetaApp.swift */,
 				C7A4787D2CEF3FC900F417A7 /* UIComponents */,
@@ -282,6 +289,19 @@
 				C7A4787E2CEF3FC900F417A7 /* BoolSettingItem.swift */,
 			);
 			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		DE99B51A2CF07F46005D9300 /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				DE99B5232CF08220005D9300 /* WalletView.swift */,
+				DE99B51B2CF07FC1005D9300 /* DefaultTonLogicMessageProcessor.swift */,
+				DE99B51C2CF07FC1005D9300 /* TonLogicMessageProcessor.swift */,
+				DE99B51E2CF07FC1005D9300 /* ViewStateManager.swift */,
+				DE99B51D2CF07FC1005D9300 /* WalletState.swift */,
+				C7A478772CEF3FC900F417A7 /* WebView */,
+			);
+			path = Wallet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -403,14 +423,18 @@
 				C7A4788B2CEF3FC900F417A7 /* KeyboardSettingsView.swift in Sources */,
 				C7A4788C2CEF3FC900F417A7 /* OpenSettings.swift in Sources */,
 				C7A478952CEF3FC900F417A7 /* BoolSettingItem.swift in Sources */,
+				DE99B5212CF07FC1005D9300 /* WalletState.swift in Sources */,
 				C7A478972CEF3FC900F417A7 /* OnboardingView.swift in Sources */,
+				DE99B5202CF07FC1005D9300 /* TonLogicMessageProcessor.swift in Sources */,
 				C7A478942CEF3FC900F417A7 /* KeyMetaApp.swift in Sources */,
+				DE99B5222CF07FC1005D9300 /* ViewStateManager.swift in Sources */,
 				C7A478962CEF3FC900F417A7 /* KeyboardInstallationState.swift in Sources */,
 				C7A478912CEF3FC900F417A7 /* WebView.swift in Sources */,
 				C7A4788A2CEF3FC900F417A7 /* KeyboardSettingsModels.swift in Sources */,
 				75E471842BB42BCB00E296D7 /* AppFont.swift in Sources */,
-				C7A478922CEF3FC900F417A7 /* WalletView.swift in Sources */,
 				C7A478842CEF3FC900F417A7 /* HomeView.swift in Sources */,
+				DE99B51F2CF07FC1005D9300 /* DefaultTonLogicMessageProcessor.swift in Sources */,
+				DE99B5242CF08220005D9300 /* WalletView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
