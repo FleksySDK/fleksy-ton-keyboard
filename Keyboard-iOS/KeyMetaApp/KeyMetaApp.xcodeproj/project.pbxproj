@@ -13,7 +13,6 @@
 		7552B61B2C00667D00FAEB15 /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E471832BB42BCB00E296D7 /* AppFont.swift */; };
 		7552B6202C006C7600FAEB15 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7552B61F2C006C7600FAEB15 /* Constants.swift */; };
 		7552B6212C006C7900FAEB15 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7552B61F2C006C7600FAEB15 /* Constants.swift */; };
-		756048902BD680820064E547 /* darkTheme.json in Resources */ = {isa = PBXBuildFile; fileRef = 7560488B2BD67FCB0064E547 /* darkTheme.json */; };
 		75E471842BB42BCB00E296D7 /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E471832BB42BCB00E296D7 /* AppFont.swift */; };
 		75FA339E2B99CDEA00F4DBFC /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FA339D2B99CDEA00F4DBFC /* KeyboardViewController.swift */; };
 		75FA33A22B99CDEA00F4DBFC /* Keyboard.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 75FA339B2B99CDEA00F4DBFC /* Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -68,7 +67,6 @@
 		751E3C622B99CD6700B9BEDE /* KeyMeta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyMeta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7552B6192C00662200FAEB15 /* ActionKeyboardAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionKeyboardAppView.swift; sourceTree = "<group>"; };
 		7552B61F2C006C7600FAEB15 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		7560488B2BD67FCB0064E547 /* darkTheme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = darkTheme.json; sourceTree = "<group>"; };
 		75E471832BB42BCB00E296D7 /* AppFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFont.swift; sourceTree = "<group>"; };
 		75FA339B2B99CDEA00F4DBFC /* Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Keyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		75FA339D2B99CDEA00F4DBFC /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
@@ -191,7 +189,6 @@
 		75FA33B02B99D0D700F4DBFC /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				7560488B2BD67FCB0064E547 /* darkTheme.json */,
 				750D8E1A2BD1097E0007DC3D /* Assets.xcassets */,
 			);
 			path = Assets;
@@ -392,7 +389,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				750D8E1B2BD1097E0007DC3D /* Assets.xcassets in Resources */,
-				756048902BD680820064E547 /* darkTheme.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
