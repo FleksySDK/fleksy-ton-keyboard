@@ -7,7 +7,9 @@ A keyboard to earn, swap and spend tokens while typing 💁.
   <a href="#keyboard-what-is-keymeta">About</a> •
   <a href="#nerd_face-typing">Typing</a> •
   <a href="#surfer-roadmap">Roadmap</a> •
-  <a href="#artificial_satellite-technology">Technology</a>
+  <a href="#artificial_satellite-technology">Technology</a>  •
+  <a href="#tap-to-earn-in-action">Video</a>
+
   <br>
 </p>
 
@@ -38,14 +40,13 @@ We have defined three main pillars to monitor going forward:
 
 The concept of the tap-to-earn is an innovate way to incentive the user to use Web3 technologies while we increase the usage, reward positive thinking and generate revene.
 
-
 **Swap**
 
-same.
+Once the user has connected their wallet and we begin rewarding them with our native coins on the TON Network, we will introduce a swap feature, allowing users to exchange our coins for other cryptocurrencies.
 
-**Secure pasteboard**
+**Secure clipboard**
 
-ahs
+As an additional feature, a secure clipboard for storing wallet addresses and other keys will be essential in providing the TON community with a high level of security, convenience and trust.
 
 # :surfer: Roadmap
 
@@ -61,29 +62,46 @@ ahs
 
 * Launch Swap Beta feature on iOS.
 * Development of a task platform featuring a Web3-powered advertising system designed to enchance user engagement and offer richer rewards.
-* 
 
 ### Q2 2025
 
 * Android Keymeta version in Beta launch.
-* 
 
 
 ## Milestones
 
-To finalise. 
+1. Launch of the KeyMeta beta for iOS during this December 2024.
+2. Tokenomics of the tap-to-earn to allow users to get rewarded.
+3. Launch of the KeyMeta beta for Android next second quarter 2025.
 
 
 # :artificial_satellite: Technology
 
-**Stonfi Technology**
+**TON Technology**
 
-TODO - List all the different technologies involed on the Keymeta from Stonfi.
+In this case we have been using:
+1. TonConnect for the wallet integration
+2. TON SDK for blockchain interactions
 
 **Know Your Customer**
 
 In order to validate that the user is a real user, to prevent fraud on the tap-to-earn system, we will be using a system in development to know if the keyboard is used by a machine or by a human. More info here: [Know your customer](https://www.fleksy.com/blog/fleksy-granted-innovate-uk-funding-to-combat-financial-fraud-on-mobile/).
 
 
+# Tap to earn in action
+
+**How KeyMeta Works: An Example**
+
+The KeyMeta app for iOS allows you to connect to your own wallet -- in this example, we will use TonKeeper. Once the wallet is connected, you can continue typing using the KeyMeta keyboard. As you type, the app tracks certain behavioural parameters from your keystrokes. These parameters help us verify that the user behind the keyboard is indeed a human, not a bot.
+
+For this demonstration, we will type a random string of text. After completing the text entry, we return to the app itself to validate that a real person typed the message, based on the tracked keystroke data.
+
+Once confirmed, the system proceeds to reward the user with our native coin, called `KMC`. The reward is then processed through the Ton Network, transferring the KMC coins directly to your connected wallet.
+
+For this example, the reward is 0.01 KMC per keyboard session.
+
+
+<video src ="https://github.com/user-attachments/assets/096653b6-e904-4cac-a2e3-8f92d31bd917" />
+  <br>
 
 
