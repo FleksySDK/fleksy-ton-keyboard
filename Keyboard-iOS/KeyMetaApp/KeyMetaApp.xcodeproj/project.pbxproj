@@ -77,6 +77,7 @@
 		75FA339F2B99CDEA00F4DBFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75FA33AE2B99CED000F4DBFC /* Keyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Keyboard.entitlements; sourceTree = "<group>"; };
 		C70DA9972CEF41FD000668D8 /* KeyMetaApp.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = KeyMetaApp.entitlements; sourceTree = "<group>"; };
+		C71CEA882CF07E2900C38E41 /* keyboard.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = keyboard.xctestplan; sourceTree = "<group>"; };
 		C7A478652CEF3FC900F417A7 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C7A478692CEF3FC900F417A7 /* Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
 		C7A4786A2CEF3FC900F417A7 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
@@ -141,6 +142,7 @@
 		751E3C592B99CD6700B9BEDE = {
 			isa = PBXGroup;
 			children = (
+				C71CEA882CF07E2900C38E41 /* keyboard.xctestplan */,
 				C7A478612CEF3FC900F417A7 /* KeyMetaApp */,
 				75FA339C2B99CDEA00F4DBFC /* Keyboard */,
 				7556768D2BDA6BBE003D192E /* Common */,
