@@ -1,0 +1,22 @@
+{
+  "configurations" : [
+    {
+      "id" : "BBED3421-B676-4788-A77B-7E8E6F3A03A3",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:KeyMetaApp.xcodeproj",
+      "identifier" : "751E3C612B99CD6700B9BEDE",
+      "name" : "KeyMetaApp"
+    }
+  },
+  "testTargets" : [
+
+  ],
+  "version" : 1
+}
