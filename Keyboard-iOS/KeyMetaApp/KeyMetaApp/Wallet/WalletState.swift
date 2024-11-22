@@ -11,7 +11,7 @@ struct JettonMetadata {
 class WalletState: ObservableObject {
     @Published var isConnected = false
     @Published var address: String = ""
-    @Published var jettonBalance: Int64 = 0
+    @Published var jettonBalance: Double = 0.0
     @Published var jettonMetadata: JettonMetadata?
     @Published var jettonWalletAddress: String = ""
     
@@ -28,7 +28,7 @@ class WalletState: ObservableObject {
         self.jettonMetadata = nil
     }
 
-    func updateJettonInfo(balance: Int64, metadata: [String: Any], jettonWalletAddress: String) {
+    func updateJettonInfo(balance: Double, metadata: [String: Any], jettonWalletAddress: String) {
         self.jettonBalance = balance
         self.jettonWalletAddress = jettonWalletAddress
         

@@ -10,21 +10,90 @@ import SwiftUI
 struct WalletInfoView: View {
     @ObservedObject var walletState: WalletState
     
+    private func formatBalance(_ balance: Double) -> String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        formatter.maximumFractionDigits = 4
+        formatter.minimumFractionDigits = 2
+        return formatter.string(from: NSNumber(value: balance)) ?? "0.00"
+    }
+    
     var body: some View {
-        VStack {
-            if walletState.isConnected {
-                if let metadata = walletState.jettonMetadata {
-                    AsyncImage(url: URL(string: metadata.image)) { image in
-                        image
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 100, height: 100)
-                    } placeholder: {
-                        ProgressView()
+        if walletState.isConnected, let metadata = walletState.jettonMetadata {
+            GeometryReader { geometry in
+                let isLandscape = geometry.size.width > geometry.size.height
+                
+                Group {
+                    if isLandscape {
+                        // Horizontal Layout
+                        HStack(spacing: 16) {
+                            // Token Image
+                            AsyncImage(url: URL(string: metadata.image)) { image in
+                                image
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 80, height: 80)
+                                    .clipShape(Circle())
+                                    .shadow(radius: 3)
+                            } placeholder: {
+                                ProgressView()
+                                    .frame(width: 80, height: 80)
+                            }
+                            
+                            // Balance Info
+                            VStack(spacing: 8) {
+                                Text(metadata.symbol)
+                                    .font(.headline)
+                                    .foregroundColor(.secondary)
+                                
+                                Text(formatBalance(walletState.jettonBalance))
+                                    .font(.title2)
+                                    .bold()
+                            }
+                            .padding()
+                            .background(
+                                RoundedRectangle(cornerRadius: 12)
+                                    .fill(Color(.systemBackground))
+                                    .shadow(color: .black.opacity(0.1), radius: 5)
+                            )
+                        }
+                    } else {
+                        // Vertical Layout
+                        VStack(spacing: 16) {
+                            // Token Image
+                            AsyncImage(url: URL(string: metadata.image)) { image in
+                                image
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 80, height: 80)
+                                    .clipShape(Circle())
+                                    .shadow(radius: 3)
+                            } placeholder: {
+                                ProgressView()
+                                    .frame(width: 80, height: 80)
+                            }
+                            
+                            // Balance Info
+                            VStack(spacing: 8) {
+                                Text(metadata.symbol)
+                                    .font(.headline)
+                                    .foregroundColor(.secondary)
+                                
+                                Text(formatBalance(walletState.jettonBalance))
+                                    .font(.title2)
+                                    .bold()
+                            }
+                            .padding()
+                            .background(
+                                RoundedRectangle(cornerRadius: 12)
+                                    .fill(Color(.systemBackground))
+                                    .shadow(color: .black.opacity(0.1), radius: 5)
+                            )
+                        }
                     }
-
-                    Text("\(metadata.symbol) Balance: \(walletState.jettonBalance)")
                 }
+                .padding()
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
         }
     }
@@ -33,10 +102,7 @@ struct WalletInfoView: View {
 struct WalletView: View {
     @StateObject private var webViewStore = WebViewStore()
     @EnvironmentObject var viewStateManager: ViewStateManager
-
-    // private let walletConnectUrl = URL(string: "https://d4rh1z6vnsnbq.cloudfront.net")
-    private let walletConnectUrl = URL(string: "http://192.168.1.67:3000")!
-
+    
     var body: some View {
         VStack {
             WebView(webViewStore: webViewStore)

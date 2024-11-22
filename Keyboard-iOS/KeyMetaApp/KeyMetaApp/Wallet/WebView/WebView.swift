@@ -53,8 +53,8 @@ struct WebView: UIViewRepresentable {
     }
     
     private func loadWebContent(_ webView: WKWebView) {
-        let address = "http://192.168.1.67:3000"
-        //let address = "https://d4rh1z6vnsnbq.cloudfront.net"
+        //let address = "http://192.168.1.67:3000"
+        let address = "https://d4rh1z6vnsnbq.cloudfront.net"
         if let url = URL(string: address) {
             let request = URLRequest(url: url)
             webView.load(request)

@@ -22,7 +22,7 @@ class DefaultTonLogicMessageProcessor: TonLogicMessageProcessor {
                             if let success = result["success"] as? Bool,
                                success,
                                let data = result["data"] as? [String: Any],
-                               let balance = data["balance"] as? Int64,
+                               let balance = data["balance"] as? Double,
                                let metadata = data["metadata"] as? [String: Any],
                                let jettonWalletAddress = data["jettonWalletAddress"] as? String {
                                 
@@ -39,6 +39,7 @@ class DefaultTonLogicMessageProcessor: TonLogicMessageProcessor {
                         }
                     }
                     
+                    /*
                     Task {
                         do {
                             let result = try await self.sendJettons(
@@ -50,6 +51,7 @@ class DefaultTonLogicMessageProcessor: TonLogicMessageProcessor {
                             print("Error sending jettons: \(error)")
                         }
                     }
+                     */
                 }
             }
         case "onDisconnectWallet":
