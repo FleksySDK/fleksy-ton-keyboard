@@ -9,6 +9,27 @@ import FleksySDK
 import Combine
 import FleksyAppsCore
 
+
+func moveFile(from sourceURL: URL, to destinationURL: URL) {
+    let fileManager = FileManager.default
+    
+    do {
+        // Ensure the destination folder exists
+        let destinationFolder = destinationURL.deletingLastPathComponent()
+        if !fileManager.fileExists(atPath: destinationFolder.path) {
+            try fileManager.createDirectory(at: destinationFolder, withIntermediateDirectories: true, attributes: nil)
+        }
+        
+        // Move the file
+        try fileManager.moveItem(at: sourceURL, to: destinationURL)
+        print("File moved successfully from \(sourceURL.path) to \(destinationURL.path)")
+    } catch {
+        print("Error moving file: \(error)")
+    }
+}
+
+
+
 class KeyboardViewController: FKKeyboardViewController {
     
     override func viewDidLoad() {
@@ -32,14 +53,8 @@ class KeyboardViewController: FKKeyboardViewController {
         return LicenseConfiguration(licenseKey: licenseKey, licenseSecret: licenseSecret)
     }
     
+    
     private func getStyleConfiguration() -> StyleConfiguration {
-        
-        let darkTheme = StyleConfiguration.defaultDarkKeyboardTheme
-        
-        // Create dark KeyboardTheme from JSON file
-        //let darkThemeJSONFilepath = Bundle.main.path(forResource: "darkTheme", ofType: "json")!
-        //let darkThemeJSON = try! String(contentsOfFile: darkThemeJSONFilepath)
-        //let darkTheme = KeyboardTheme(jsonString: darkThemeJSON)!
         
         // Create StyleConfiguration object
         return StyleConfiguration(spacebarLogoImage:UIImage(named: "SpacebarLogoKeyMeta"), spacebarStyle: .spacebarStyle_LogoOnly, spacebarLogoContentMode: .scaleAspectFit)
@@ -53,11 +68,30 @@ class KeyboardViewController: FKKeyboardViewController {
             keyboardApps.append(FullAccessKeyboardApp())
         }
         
+        // Validate that the text written by the person is actual text and there is a person behind it.
+        //
+        let dataConfig = FLDataConfiguration()
+        let dataValidation = CaptureConfiguration(true, output: enumCaptureOutput.captureOutput_file, dataConfig: dataConfig)
+        
         let appsConfig = AppsConfiguration(keyboardApps: keyboardApps, showAppsInCarousel: false)
-        return KeyboardConfiguration(style: getStyleConfiguration(),
+        return KeyboardConfiguration(   capture:dataValidation,
+                                     style: getStyleConfiguration(),
                                      apps: appsConfig,
                                      license: getLicenseConfiguration())
     }
     
+    override func dataCollectionStored(_ path: String, sessionId: String) {
+        let sourceURL = URL(fileURLWithPath: path)
+        
+        if let sharedContainerURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.thingthing.KeyMeta"){
+            
+            let sharedResourcesURL = sharedContainerURL.appendingPathComponent("Resources/logger_typing_validate.log")
+            moveFile(from: sourceURL, to: sharedResourcesURL)
+        }
+    }
+        
     override var appIcon: UIImage? { nil }
+    
 }
+
+    

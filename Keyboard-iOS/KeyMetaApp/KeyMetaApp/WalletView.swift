@@ -6,6 +6,40 @@
 //
 
 import SwiftUI
+import Foundation
+
+
+struct DataValidation: Codable {
+    let sessionId: String
+    let text: String
+}
+
+
+func loadDataValidation() -> DataValidation?{
+    
+    // Obtain the shared container URL
+    if let sharedContainerURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.thingthing.KeyMeta") {
+        
+        let prefix = "logger_typing_validate"
+        
+        let pathLogger = "Resources/" + prefix + ".log"
+        let dataURL = sharedContainerURL.appendingPathComponent(pathLogger)
+        do {
+            // Load the data from the file
+            let data = try Data(contentsOf: dataURL)
+                
+            // Decode the JSON into the specified type
+            let decoder = JSONDecoder()
+            let decodedData = try decoder.decode(DataValidation.self, from: data)
+            return decodedData
+         } catch {
+             print("Failed to decode \(error)")
+            return nil
+         }
+    }
+    return nil
+}
+
 
 struct WalletView: View {
         
@@ -21,6 +55,8 @@ struct WalletView: View {
             Spacer()
             Button(action: {
                 print("Button Example Tapped")
+                let data = loadDataValidation()
+                print("data loaded")
             }) {
                 Text("This is a sample btn")
                      .foregroundColor(.white)
