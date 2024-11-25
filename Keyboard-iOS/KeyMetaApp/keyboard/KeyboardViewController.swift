@@ -8,6 +8,7 @@
 import FleksySDK
 import Combine
 import FleksyAppsCore
+import MediaShareApp
 
 
 func moveFile(from sourceURL: URL, to destinationURL: URL) {
@@ -29,7 +30,6 @@ func moveFile(from sourceURL: URL, to destinationURL: URL) {
 }
 
 
-
 class KeyboardViewController: FKKeyboardViewController {
     
     override func viewDidLoad() {
@@ -43,41 +43,67 @@ class KeyboardViewController: FKKeyboardViewController {
         }
     }
     
-    private func getLicenseConfiguration() -> LicenseConfiguration {
-        guard
-            let licenseKey = Bundle.main.object(forInfoDictionaryKey: "SDKLicenseKey") as? String,
-            let licenseSecret = Bundle.main.object(forInfoDictionaryKey: "SDKLicenseSecret") as? String else {
-            fatalError("Please, create the file SDKCredentials.xcconfig and add the license key and license secret for the SDK_LICENSE_KEY and SDK_LICENSE_SECRET configuration keys")
+    private lazy var licenseKey: String = {
+        guard let licenseKey = Bundle.main.object(forInfoDictionaryKey: "SDKLicenseKey") as? String else {
+            fatalError("Please, make sure that a SDK license key is set for the SDKLicenseKey key in the keyboard extension's info.plist file")
         }
-        
-        return LicenseConfiguration(licenseKey: licenseKey, licenseSecret: licenseSecret)
-    }
+        return licenseKey
+    }()
     
+    private lazy var licenseSecret: String = {
+        guard let licenseKey = Bundle.main.object(forInfoDictionaryKey: "SDKLicenseSecret") as? String else {
+            fatalError("Please, make sure that a SDK license secret is set for the SDKLicenseSecret key in the keyboard extension's info.plist file")
+        }
+        return licenseKey
+    }()
+    
+    private lazy var mediaShareApiKey: String = {
+        guard let mediaShareApiKey = Bundle.main.object(forInfoDictionaryKey: "MediaShareAppApiKey") as? String else {
+            fatalError("Please, make sure that a MediaShare App API key is set for the MEDIA_SHARE_API_KEY key in the SDKCredentials.xcconfig file ")
+        }
+        return mediaShareApiKey
+    }()
     
     private func getStyleConfiguration() -> StyleConfiguration {
         
         // Create StyleConfiguration object
         return StyleConfiguration(spacebarLogoImage:UIImage(named: "SpacebarLogoKeyMeta"), spacebarStyle: .spacebarStyle_LogoOnly, spacebarLogoContentMode: .scaleAspectFit)
     }
-
+    
+    private var mediaShareApp: MediaShareApp?
+    
+    private func getMediaShareApp() -> MediaShareApp {
+        if let mediaShareApp {
+            return mediaShareApp
+        } else {
+            let mediaShareApp = MediaShareApp(contentType: .gifs, apiKey: mediaShareApiKey, sdkLicenseKey: licenseKey)
+            self.mediaShareApp = mediaShareApp
+            return mediaShareApp
+        }
+    }
+    
     override func createConfiguration() -> KeyboardConfiguration {
         
-        var keyboardApps: [KeyboardApp] = []
-        
-        if !hasFullAccess {
-            keyboardApps.append(FullAccessKeyboardApp())
-        }
+        let keyboardApps: [KeyboardApp] = hasFullAccess ? [getMediaShareApp()] : [FullAccessKeyboardApp()]
         
         // Validate that the text written by the person is actual text and there is a person behind it.
         //
         let dataConfig = FLDataConfiguration()
-        let dataValidation = CaptureConfiguration(true, output: enumCaptureOutput.captureOutput_file, dataConfig: dataConfig)
+        let dataValidation = CaptureConfiguration(true,
+                                                  output: enumCaptureOutput.captureOutput_file,
+                                                  dataConfig: dataConfig)
+        let styleConfig = StyleConfiguration(spacebarLogoImage:UIImage(named: "SpacebarLogoKeyMeta"),
+                                             spacebarStyle: .spacebarStyle_LogoOnly,
+                                             spacebarLogoContentMode: .scaleAspectFit)
         
-        let appsConfig = AppsConfiguration(keyboardApps: keyboardApps, showAppsInCarousel: false)
-        return KeyboardConfiguration(   capture:dataValidation,
+        let appsConfig = AppsConfiguration(keyboardApps: keyboardApps,
+                                           showAppsInCarousel: false)
+        let licenseConfig = LicenseConfiguration(licenseKey: licenseKey,
+                                                 licenseSecret: licenseSecret)
+        return KeyboardConfiguration(capture:dataValidation,
                                      style: getStyleConfiguration(),
                                      apps: appsConfig,
-                                     license: getLicenseConfiguration())
+                                     license: licenseConfig)
     }
     
     override func dataCollectionStored(_ path: String, sessionId: String) {
@@ -89,9 +115,33 @@ class KeyboardViewController: FKKeyboardViewController {
             moveFile(from: sourceURL, to: sharedResourcesURL)
         }
     }
-        
-    override var appIcon: UIImage? { nil }
     
+    override var appIcon: UIImage? {
+        UIImage(named: "KeyMeta")
+    }
+    
+    override func triggerOpenApp() {
+        //TODO: implement when pressing the KeyMeta logo
+    }
+    
+    private lazy var gifMediaShareAppButton: UIButton = {
+        var btnConfig = UIButton.Configuration.plain()
+        btnConfig.image = mediaShareApp?.appIcon()?.withRenderingMode(.alwaysOriginal)
+        btnConfig.title = nil
+        let btn = UIButton(configuration: btnConfig)
+        let action = UIAction { [weak self] _ in
+            guard let self else { return }
+            self.openApp(appId: self.getMediaShareApp().appId)
+        }
+        btn.addAction(action, for: .touchUpInside)
+        return btn
+    }()
+    
+    override var trailingTopBarView: UIView? {
+        if hasFullAccess {
+            return gifMediaShareAppButton
+        } else {
+            return nil
+        }
+    }
 }
-
-    

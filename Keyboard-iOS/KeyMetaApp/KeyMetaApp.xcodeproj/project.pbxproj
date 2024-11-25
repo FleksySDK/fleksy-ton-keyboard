@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		750D8E1B2BD1097E0007DC3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 750D8E1A2BD1097E0007DC3D /* Assets.xcassets */; };
 		751A20012C11929C00AC38DA /* FullAccessKeyboardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751A20002C11929C00AC38DA /* FullAccessKeyboardApp.swift */; };
+		751F75302CF4AD6000776678 /* FleksyApps in Frameworks */ = {isa = PBXBuildFile; productRef = 751F752F2CF4AD6000776678 /* FleksyApps */; };
 		7552B61A2C00662200FAEB15 /* ActionKeyboardAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7552B6192C00662200FAEB15 /* ActionKeyboardAppView.swift */; };
 		7552B61B2C00667D00FAEB15 /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E471832BB42BCB00E296D7 /* AppFont.swift */; };
 		7552B6202C006C7600FAEB15 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7552B61F2C006C7600FAEB15 /* Constants.swift */; };
@@ -115,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				751F75302CF4AD6000776678 /* FleksyApps in Frameworks */,
 				75FA33A92B99CE1600F4DBFC /* FleksySDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,6 +348,7 @@
 			name = Keyboard;
 			packageProductDependencies = (
 				75FA33A82B99CE1600F4DBFC /* FleksySDK */,
+				751F752F2CF4AD6000776678 /* FleksyApps */,
 			);
 			productName = Keyboard;
 			productReference = 75FA339B2B99CDEA00F4DBFC /* Keyboard.appex */;
@@ -380,6 +383,7 @@
 			mainGroup = 751E3C592B99CD6700B9BEDE;
 			packageReferences = (
 				75FA33A72B99CE1600F4DBFC /* XCRemoteSwiftPackageReference "FleksySDK-iOS" */,
+				751F752E2CF4AD6000776678 /* XCRemoteSwiftPackageReference "KeyboardPlugins-iOS" */,
 			);
 			productRefGroup = 751E3C632B99CD6700B9BEDE /* Products */;
 			projectDirPath = "";
@@ -735,6 +739,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		751F752E2CF4AD6000776678 /* XCRemoteSwiftPackageReference "KeyboardPlugins-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/FleksySDK/KeyboardPlugins-iOS";
+			requirement = {
+				kind = exactVersion;
+				version = "2.0.0-rc.1";
+			};
+		};
 		75FA33A72B99CE1600F4DBFC /* XCRemoteSwiftPackageReference "FleksySDK-iOS" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/FleksySDK/FleksySDK-iOS";
@@ -746,6 +758,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		751F752F2CF4AD6000776678 /* FleksyApps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 751F752E2CF4AD6000776678 /* XCRemoteSwiftPackageReference "KeyboardPlugins-iOS" */;
+			productName = FleksyApps;
+		};
 		75FA33A82B99CE1600F4DBFC /* FleksySDK */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 75FA33A72B99CE1600F4DBFC /* XCRemoteSwiftPackageReference "FleksySDK-iOS" */;

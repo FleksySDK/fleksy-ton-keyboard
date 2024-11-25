@@ -35,6 +35,15 @@
         "revision" : "fbc2e5e6c79e8502887805db4724aca7b048180c",
         "version" : "1.3.2"
       }
+    },
+    {
+      "identity" : "keyboardplugins-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/FleksySDK/KeyboardPlugins-iOS",
+      "state" : {
+        "revision" : "0ee401c163ad9a28037c9971a9b8150af3325b42",
+        "version" : "2.0.0-rc.1"
+      }
     }
   ],
   "version" : 2
