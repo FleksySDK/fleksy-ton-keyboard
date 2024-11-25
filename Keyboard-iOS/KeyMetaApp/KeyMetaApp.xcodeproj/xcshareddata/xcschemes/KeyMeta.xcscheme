@@ -62,9 +62,6 @@
             ReferencedContainer = "container:KeyMetaApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <StoreKitConfigurationFileReference
-         identifier = "../../MedicalKeyboard/Resources/MediKey.storekit">
-      </StoreKitConfigurationFileReference>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
