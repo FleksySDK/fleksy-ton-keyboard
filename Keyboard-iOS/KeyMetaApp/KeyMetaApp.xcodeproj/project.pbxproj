@@ -69,6 +69,7 @@
 		750D8E1A2BD1097E0007DC3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		751A20002C11929C00AC38DA /* FullAccessKeyboardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullAccessKeyboardApp.swift; sourceTree = "<group>"; };
 		751E3C622B99CD6700B9BEDE /* KeyMeta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyMeta.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		751F75312CF4D38600776678 /* SDKCredentials.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SDKCredentials.xcconfig; sourceTree = "<group>"; };
 		7552B6192C00662200FAEB15 /* ActionKeyboardAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionKeyboardAppView.swift; sourceTree = "<group>"; };
 		7552B61F2C006C7600FAEB15 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		75E471832BB42BCB00E296D7 /* AppFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFont.swift; sourceTree = "<group>"; };
@@ -77,7 +78,6 @@
 		75FA339F2B99CDEA00F4DBFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75FA33AE2B99CED000F4DBFC /* Keyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Keyboard.entitlements; sourceTree = "<group>"; };
 		C70DA9972CEF41FD000668D8 /* KeyMetaApp.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = KeyMetaApp.entitlements; sourceTree = "<group>"; };
-		C71CEA882CF07E2900C38E41 /* keyboard.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = keyboard.xctestplan; sourceTree = "<group>"; };
 		C7A478652CEF3FC900F417A7 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C7A478692CEF3FC900F417A7 /* Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
 		C7A4786A2CEF3FC900F417A7 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
@@ -142,7 +142,6 @@
 		751E3C592B99CD6700B9BEDE = {
 			isa = PBXGroup;
 			children = (
-				C71CEA882CF07E2900C38E41 /* keyboard.xctestplan */,
 				C7A478612CEF3FC900F417A7 /* KeyMetaApp */,
 				75FA339C2B99CDEA00F4DBFC /* Keyboard */,
 				7556768D2BDA6BBE003D192E /* Common */,
@@ -238,6 +237,7 @@
 				C7A478692CEF3FC900F417A7 /* Shared.xcconfig */,
 				C7A4786A2CEF3FC900F417A7 /* Debug.xcconfig */,
 				C7A4786B2CEF3FC900F417A7 /* Release.xcconfig */,
+				751F75312CF4D38600776678 /* SDKCredentials.xcconfig */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -465,6 +465,7 @@
 /* Begin XCBuildConfiguration section */
 		751E3C6E2B99CD6800B9BEDE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7A4786A2CEF3FC900F417A7 /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -528,6 +529,7 @@
 		};
 		751E3C6F2B99CD6800B9BEDE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7A4786B2CEF3FC900F417A7 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;

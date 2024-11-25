@@ -5,4 +5,5 @@
 //
 //
 
+#include? "SDKCredentials.xcconfig"
 #include "Shared.xcconfig"
