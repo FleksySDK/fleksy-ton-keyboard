@@ -20,17 +20,17 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aRi-zg-Ufu">
                                 <rect key="frame" x="0.0" y="59" width="393" height="275.66666666666669"/>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IconLaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="ckU-jG-l4h">
+                            <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IconLaunch" translatesAutoresizingMaskIntoConstraints="NO" id="ckU-jG-l4h">
                                 <rect key="frame" x="131" y="334.66666666666669" width="131" height="131"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ckU-jG-l4h" secondAttribute="height" id="UJS-UZ-BZB"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YfC-kH-qrH">
-                                <rect key="frame" x="0.0" y="465.66666666666663" width="393" height="275.66666666666663"/>
+                                <rect key="frame" x="0.0" y="465.66666666666674" width="393" height="275.33333333333326"/>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KeyMeta" translatesAutoresizingMaskIntoConstraints="NO" id="wy6-wm-3ge">
-                                <rect key="frame" x="138" y="741.33333333333337" width="117" height="26.666666666666629"/>
+                                <rect key="frame" x="137.66666666666666" y="741" width="118" height="27"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -59,7 +59,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="IconLaunchScreen" width="1024" height="1024"/>
+        <image name="IconLaunch" width="1032" height="1024"/>
         <image name="KeyMeta" width="118" height="27"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
