@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "KeyMeta-spacebar.png",
+      "filename" : "IconGIF.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "KeyMeta-spacebar@2x.png",
+      "filename" : "IconGIF@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "KeyMeta-spacebar@3x.png",
+      "filename" : "IconGIF@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

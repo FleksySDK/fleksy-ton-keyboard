@@ -70,21 +70,32 @@ class KeyboardViewController: FKKeyboardViewController {
         return StyleConfiguration(spacebarLogoImage:UIImage(named: "SpacebarLogoKeyMeta"), spacebarStyle: .spacebarStyle_LogoOnly, spacebarLogoContentMode: .scaleAspectFit)
     }
     
+    private var keyMetaApp: PluginKeyMeta?
     private var mediaShareApp: MediaShareApp?
     
     private func getMediaShareApp() -> MediaShareApp {
         if let mediaShareApp {
             return mediaShareApp
         } else {
-            let mediaShareApp = MediaShareApp(contentType: .gifs, apiKey: mediaShareApiKey, sdkLicenseKey: licenseKey)
+            let mediaShareApp = MediaShareApp(contentType: .gifs, apiKey: mediaShareApiKey, sdkLicenseKey: licenseKey, appIcon: UIImage(named: "IconGIF"))
             self.mediaShareApp = mediaShareApp
             return mediaShareApp
         }
     }
     
+    private func getKeyMetaApp() -> PluginKeyMeta{
+        if let keyMetaApp {
+            return keyMetaApp
+        } else {
+            let keyMetaApp = PluginKeyMeta()
+            self.keyMetaApp = keyMetaApp
+            return keyMetaApp
+        }
+    }
+    
     override func createConfiguration() -> KeyboardConfiguration {
         
-        let keyboardApps: [KeyboardApp] = hasFullAccess ? [getMediaShareApp()] : [FullAccessKeyboardApp()]
+        let keyboardApps: [KeyboardApp] = hasFullAccess ? [getMediaShareApp(), getKeyMetaApp()] : [FullAccessKeyboardApp()]
         
         // Validate that the text written by the person is actual text and there is a person behind it.
         //
@@ -97,7 +108,7 @@ class KeyboardViewController: FKKeyboardViewController {
                                              spacebarLogoContentMode: .scaleAspectFit)
         
         let appsConfig = AppsConfiguration(keyboardApps: keyboardApps,
-                                           showAppsInCarousel: false)
+                                           showAppsInCarousel: true)
         let licenseConfig = LicenseConfiguration(licenseKey: licenseKey,
                                                  licenseSecret: licenseSecret)
         return KeyboardConfiguration(capture:dataValidation,
@@ -117,11 +128,7 @@ class KeyboardViewController: FKKeyboardViewController {
     }
     
     override var appIcon: UIImage? {
-        UIImage(named: "KeyMeta")
-    }
-    
-    override func triggerOpenApp() {
-        //TODO: implement when pressing the KeyMeta logo
+        UIImage(named: "KeyboardIcon")
     }
     
     private lazy var gifMediaShareAppButton: UIButton = {
@@ -136,12 +143,4 @@ class KeyboardViewController: FKKeyboardViewController {
         btn.addAction(action, for: .touchUpInside)
         return btn
     }()
-    
-    override var trailingTopBarView: UIView? {
-        if hasFullAccess {
-            return gifMediaShareAppButton
-        } else {
-            return nil
-        }
-    }
 }

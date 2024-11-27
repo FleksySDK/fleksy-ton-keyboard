@@ -19,6 +19,8 @@
 		75FA33A22B99CDEA00F4DBFC /* Keyboard.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 75FA339B2B99CDEA00F4DBFC /* Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		75FA33A92B99CE1600F4DBFC /* FleksySDK in Frameworks */ = {isa = PBXBuildFile; productRef = 75FA33A82B99CE1600F4DBFC /* FleksySDK */; };
 		75FA33AC2B99CE8200F4DBFC /* FleksySDK in Frameworks */ = {isa = PBXBuildFile; productRef = 75FA33AB2B99CE8200F4DBFC /* FleksySDK */; };
+		C725944F2CF5CFDE00EBDFEB /* SDKCredentials.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = C725944E2CF5CFDE00EBDFEB /* SDKCredentials.xcconfig */; };
+		C72594552CF726BE00EBDFEB /* PluginKeyMeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72594542CF726BE00EBDFEB /* PluginKeyMeta.swift */; };
 		C7A478842CEF3FC900F417A7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A478652CEF3FC900F417A7 /* HomeView.swift */; };
 		C7A478872CEF3FC900F417A7 /* Shared.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = C7A478692CEF3FC900F417A7 /* Shared.xcconfig */; };
 		C7A478882CEF3FC900F417A7 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = C7A4786A2CEF3FC900F417A7 /* Debug.xcconfig */; };
@@ -79,6 +81,8 @@
 		75FA339F2B99CDEA00F4DBFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75FA33AE2B99CED000F4DBFC /* Keyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Keyboard.entitlements; sourceTree = "<group>"; };
 		C70DA9972CEF41FD000668D8 /* KeyMetaApp.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = KeyMetaApp.entitlements; sourceTree = "<group>"; };
+		C725944E2CF5CFDE00EBDFEB /* SDKCredentials.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = SDKCredentials.xcconfig; sourceTree = "<group>"; };
+		C72594542CF726BE00EBDFEB /* PluginKeyMeta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PluginKeyMeta.swift; path = keyboard/KeyboardApps/PluginKeyMeta.swift; sourceTree = SOURCE_ROOT; };
 		C7A478652CEF3FC900F417A7 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C7A478692CEF3FC900F417A7 /* Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
 		C7A4786A2CEF3FC900F417A7 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
@@ -128,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				7552B6192C00662200FAEB15 /* ActionKeyboardAppView.swift */,
+				C72594542CF726BE00EBDFEB /* PluginKeyMeta.swift */,
 				751A1FFF2C11928900AC38DA /* FullAccessKeyboardApp */,
 			);
 			path = KeyboardApps;
@@ -144,6 +149,7 @@
 		751E3C592B99CD6700B9BEDE = {
 			isa = PBXGroup;
 			children = (
+				C725944E2CF5CFDE00EBDFEB /* SDKCredentials.xcconfig */,
 				C7A478612CEF3FC900F417A7 /* KeyMetaApp */,
 				75FA339C2B99CDEA00F4DBFC /* Keyboard */,
 				7556768D2BDA6BBE003D192E /* Common */,
@@ -406,6 +412,7 @@
 				C7A478932CEF3FC900F417A7 /* Preview Assets.xcassets in Resources */,
 				C7A4788F2CEF3FC900F417A7 /* Launch.storyboard in Resources */,
 				C7A4788D2CEF3FC900F417A7 /* Assets.xcassets in Resources */,
+				C725944F2CF5CFDE00EBDFEB /* SDKCredentials.xcconfig in Resources */,
 				C7A478872CEF3FC900F417A7 /* Shared.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -451,6 +458,7 @@
 				7552B61B2C00667D00FAEB15 /* AppFont.swift in Sources */,
 				7552B61A2C00662200FAEB15 /* ActionKeyboardAppView.swift in Sources */,
 				751A20012C11929C00AC38DA /* FullAccessKeyboardApp.swift in Sources */,
+				C72594552CF726BE00EBDFEB /* PluginKeyMeta.swift in Sources */,
 				7552B6202C006C7600FAEB15 /* Constants.swift in Sources */,
 				75FA339E2B99CDEA00F4DBFC /* KeyboardViewController.swift in Sources */,
 			);
@@ -744,7 +752,7 @@
 			repositoryURL = "https://github.com/FleksySDK/KeyboardPlugins-iOS";
 			requirement = {
 				kind = exactVersion;
-				version = "2.0.0-rc.1";
+				version = "2.0.0-rc.2";
 			};
 		};
 		75FA33A72B99CE1600F4DBFC /* XCRemoteSwiftPackageReference "FleksySDK-iOS" */ = {
